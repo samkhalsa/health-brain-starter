@@ -1,7 +1,7 @@
 /**
  * Backfill historical Withings data into Postgres.
  *
- *   npm run backfill:withings           # default 365 days (captures the ~100 weigh-ins)
+ *   npm run backfill:withings           # default 365 days
  *   npm run backfill:withings -- 30
  *   npm run backfill:withings -- 2025-05-01 2026-04-21
  */

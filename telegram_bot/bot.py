@@ -226,7 +226,7 @@ def handle_updates(last_update_id):
                 tz_list = "\n".join(f"  \u2022 `{tz}`" for tz in VALID_TIMEZONES)
                 send_message(
                     f"*Current timezone:* `{current}`\n\n"
-                    f"To change, send:\n`/timezone America/Toronto`\n\n"
+                    f"To change, send:\n`/timezone America/New_York`\n\n"
                     f"*Available timezones:*\n{tz_list}"
                 )
             else:

@@ -1,5 +1,5 @@
 import { workoutForDay, type WorkoutDay } from "./workouts";
-import { torontoNow } from "@/lib/timezone";
+import { userNow } from "@/lib/timezone";
 
 export type Intensity = "REST" | "RED" | "YELLOW" | "GREEN";
 
@@ -35,9 +35,9 @@ function recoveryBucket(score: number | null): Intensity {
 }
 
 export function prescribe(input: PrescribeInput): Prescription {
-  // Use Toronto day-of-week regardless of server TZ
-  const torontoDow = torontoNow().getUTCDay();
-  const scheduled = workoutForDay(torontoDow);
+  // Use the user's local day-of-week regardless of server TZ
+  const userDow = userNow().getUTCDay();
+  const scheduled = workoutForDay(userDow);
   const modifications: string[] = [];
   const warnings: string[] = [];
   const affirmations: string[] = [];
@@ -127,7 +127,7 @@ export function prescribe(input: PrescribeInput): Prescription {
     rulesFired.push("New 12-month low weight");
   }
 
-  rulesFired.push(`${dayLabel(torontoDow)} → ${scheduled.name}`);
+  rulesFired.push(`${dayLabel(userDow)} → ${scheduled.name}`);
 
   const primaryBlock =
     intensity === "REST"

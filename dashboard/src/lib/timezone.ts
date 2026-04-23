@@ -65,8 +65,3 @@ export function userToday(): string {
   }).format(new Date());
 }
 
-// Backwards-compatible aliases — existing call sites can migrate incrementally.
-export const torontoNow = userNow;
-export const torontoDayOfWeek = userDayOfWeek;
-export const formatTorontoDate = formatUserDate;
-export const torontoToday = userToday;

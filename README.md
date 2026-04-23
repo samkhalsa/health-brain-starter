@@ -215,7 +215,7 @@ Edit `.env`:
 ```bash
 BOT_TOKEN=123456:ABC-your-bot-token-here
 CHAT_ID=123456789
-TIMEZONE=America/Toronto
+TIMEZONE=America/New_York
 ```
 
 ### 3. Customize your reminders

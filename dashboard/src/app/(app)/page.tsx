@@ -11,7 +11,7 @@ import { SupplementChecklist } from "@/components/prescribe/SupplementChecklist"
 import { RefreshButton } from "@/components/RefreshButton";
 import { displaySportName } from "@/lib/whoop/labels";
 import { fmtDelta, kgToLb, relativeTime } from "@/lib/utils";
-import { formatTorontoDate } from "@/lib/timezone";
+import { formatUserDate } from "@/lib/timezone";
 
 export const dynamic = "force-dynamic";
 
@@ -66,7 +66,7 @@ export default async function TodayPage() {
       )}
       {/* Header row */}
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-xs text-muted">
-        <div className="shrink-0">{formatTorontoDate()}</div>
+        <div className="shrink-0">{formatUserDate()}</div>
         <div className="flex items-center gap-3">
           <div className={(stale ? "text-recovery-red " : "") + "shrink-0"}>
             <span className="hidden sm:inline">

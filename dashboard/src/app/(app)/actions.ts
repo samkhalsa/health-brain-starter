@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { sql } from "drizzle-orm";
 import { db } from "@/lib/db/client";
 import { supplementLog, syncRuns } from "@/lib/db/schema";
-import { torontoToday } from "@/lib/timezone";
+import { userToday } from "@/lib/timezone";
 import { auth } from "@/lib/auth";
 import { WhoopClient } from "@/lib/whoop/client";
 import { upsertWhoop } from "@/lib/whoop/sync";
@@ -12,13 +12,13 @@ import { WithingsClient } from "@/lib/withings/client";
 import { upsertWithings } from "@/lib/withings/sync";
 
 /**
- * Toggle a supplement as taken/not-taken for today (Toronto time).
+ * Toggle a supplement as taken/not-taken for today (user's local time).
  * Idempotent: re-submits flip the state.
  */
 export async function toggleSupplement(supplementKey: string): Promise<void> {
   if (!supplementKey || typeof supplementKey !== "string") return;
 
-  const date = torontoToday();
+  const date = userToday();
   const existing = await db
     .select({ id: supplementLog.id })
     .from(supplementLog)

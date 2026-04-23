@@ -12,7 +12,7 @@ import {
 } from "@/lib/db/schema";
 import { prescribe, type Prescription } from "@/lib/prescribe/engine";
 import { average } from "@/lib/db/queries";
-import { torontoToday } from "@/lib/timezone";
+import { userToday } from "@/lib/timezone";
 
 function daysAgo(n: number): Date {
   const d = new Date();
@@ -106,7 +106,7 @@ export async function getTodayData(now = new Date()): Promise<TodayData> {
     db
       .select({ key: supplementLog.supplementKey })
       .from(supplementLog)
-      .where(sql`${supplementLog.date} = ${torontoToday()}`),
+      .where(sql`${supplementLog.date} = ${userToday()}`),
   ]);
 
   const rec = latestRec[0];
