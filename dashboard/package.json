@@ -1,0 +1,48 @@
+{
+  "name": "health-brain-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "seed:tokens": "tsx scripts/seed-tokens.ts",
+    "backfill:whoop": "tsx scripts/backfill-whoop.ts",
+    "backfill:withings": "tsx scripts/backfill-withings.ts",
+    "verify:parity": "tsx scripts/verify-parity.ts",
+    "seed:biomarkers": "tsx scripts/seed-biomarkers.ts"
+  },
+  "dependencies": {
+    "@auth/core": "^0.34.2",
+    "@neondatabase/serverless": "^0.10.4",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.36.4",
+    "lucide-react": "^0.460.0",
+    "next": "^15.4.0",
+    "next-auth": "5.0.0-beta.25",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "recharts": "^2.15.0",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.10.1",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.29.1",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.4.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/morning",
+      "schedule": "0 13 * * *"
+    },
+    {
+      "path": "/api/cron/gym",
+      "schedule": "0 15 * * *"
+    },
+    {
+      "path": "/api/cron/evening",
+      "schedule": "0 1 * * *"
+    }
+  ]
+}

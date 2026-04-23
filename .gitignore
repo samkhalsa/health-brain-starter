@@ -1,0 +1,47 @@
+# Secrets & tokens
+.env
+.env.local
+.env.*.local
+*_tokens.json
+whoop_tokens.json
+withings_tokens.json
+timezone.txt
+
+# Raw API output (may contain personal health data)
+*_raw.json
+*_report.md
+whoop_raw.json
+whoop_report.md
+withings_raw.json
+withings_report.md
+
+# Your personal health data
+# If you keep this repo private and want to commit your data, delete this section.
+# Otherwise, fill in the section templates in a fork or private branch.
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Node / Next.js (if you add the dashboard)
+node_modules/
+.next/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo

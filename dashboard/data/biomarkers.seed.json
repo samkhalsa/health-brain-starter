@@ -1,0 +1,60 @@
+{
+  "_comment": "Template for seeding a bloodwork panel into the biomarkers table. Replace with your own values and run `npm run seed:biomarkers`. Each marker has optimal ranges (longevity-targeted) and standard lab ranges. Severity must be one of: optimal, monitor, high, critical. Use `null` for one-sided ranges (e.g. [null, 100] = only an upper bound).",
+  "panels": [
+    {
+      "drawn_at": "YYYY-MM-DD",
+      "lab": "Your Lab Name",
+      "notes": "Optional panel-level notes (fasting status, illness, medications, etc.)",
+      "markers": [
+        { "key": "fasting_glucose", "value": null, "unit": "mg/dL", "optimal": [72, 85], "standard": [null, 100], "severity": "optimal", "notes": "" },
+        { "key": "hba1c", "value": null, "unit": "%", "optimal": [4.8, 5.2], "standard": [null, 5.7], "severity": "optimal", "notes": "" },
+        { "key": "fasting_insulin", "value": null, "unit": "uIU/mL", "optimal": [null, 7], "standard": [null, 25], "severity": "optimal", "notes": "" },
+        { "key": "homa_ir", "value": null, "unit": "", "optimal": [null, 1.0], "standard": [null, 2.5], "severity": "optimal", "notes": "" },
+
+        { "key": "apo_b", "value": null, "unit": "mg/dL", "optimal": [null, 90], "standard": [null, 130], "severity": "optimal", "notes": "" },
+        { "key": "apo_a1", "value": null, "unit": "mg/dL", "optimal": [120, null], "standard": [79, 169], "severity": "optimal", "notes": "" },
+        { "key": "lp_a", "value": null, "unit": "mg/dL", "optimal": [null, 30], "standard": [null, 75], "severity": "optimal", "notes": "" },
+        { "key": "triglycerides", "value": null, "unit": "mg/dL", "optimal": [null, 70], "standard": [null, 150], "severity": "optimal", "notes": "" },
+        { "key": "hdl_c", "value": null, "unit": "mg/dL", "optimal": [60, null], "standard": [40, null], "severity": "optimal", "notes": "" },
+        { "key": "ldl_c", "value": null, "unit": "mg/dL", "optimal": [null, 100], "standard": [null, 130], "severity": "optimal", "notes": "" },
+        { "key": "total_cholesterol", "value": null, "unit": "mg/dL", "optimal": [null, 200], "standard": [null, 200], "severity": "optimal", "notes": "" },
+        { "key": "non_hdl_cholesterol", "value": null, "unit": "mg/dL", "optimal": [null, 130], "standard": [null, 130], "severity": "optimal", "notes": "" },
+        { "key": "tc_hdl_ratio", "value": null, "unit": "", "optimal": [null, 3.5], "standard": [3.0, 5.0], "severity": "optimal", "notes": "" },
+
+        { "key": "hs_crp", "value": null, "unit": "mg/L", "optimal": [null, 0.5], "standard": [null, 3.0], "severity": "optimal", "notes": "" },
+        { "key": "homocysteine", "value": null, "unit": "umol/L", "optimal": [null, 7], "standard": [null, 15], "severity": "optimal", "notes": "" },
+        { "key": "esr", "value": null, "unit": "mm/hr", "optimal": [null, 5], "standard": [0, 10], "severity": "optimal", "notes": "" },
+
+        { "key": "total_testosterone", "value": null, "unit": "ng/dL", "optimal": [600, 900], "standard": [300, 1000], "severity": "optimal", "notes": "Age- and sex-specific — adjust ranges" },
+        { "key": "free_testosterone", "value": null, "unit": "pg/mL", "optimal": [30, 46], "standard": [12.3, 46.6], "severity": "optimal", "notes": "" },
+        { "key": "shbg", "value": null, "unit": "nmol/L", "optimal": [30, 50], "standard": [14.55, 94.64], "severity": "optimal", "notes": "" },
+        { "key": "lh", "value": null, "unit": "mIU/mL", "optimal": [4, 8], "standard": [0.57, 12.07], "severity": "optimal", "notes": "" },
+        { "key": "dhea_s", "value": null, "unit": "µg/dL", "optimal": [300, 500], "standard": [34.5, 568.9], "severity": "optimal", "notes": "" },
+        { "key": "cortisol_am", "value": null, "unit": "µg/dL", "optimal": [10, 18], "standard": [5.27, 22.45], "severity": "optimal", "notes": "" },
+        { "key": "tsh", "value": null, "unit": "mIU/L", "optimal": [1.0, 2.0], "standard": [0.35, 4.94], "severity": "optimal", "notes": "" },
+        { "key": "free_t3", "value": null, "unit": "pg/mL", "optimal": [3.0, 3.5], "standard": [1.71, 3.71], "severity": "optimal", "notes": "" },
+        { "key": "free_t4", "value": null, "unit": "ng/dL", "optimal": [1.0, 1.3], "standard": [0.70, 1.48], "severity": "optimal", "notes": "" },
+        { "key": "estradiol", "value": null, "unit": "pg/mL", "optimal": [20, 35], "standard": [0, 39.8], "severity": "optimal", "notes": "Male ranges shown — adjust for sex" },
+
+        { "key": "egfr", "value": null, "unit": "mL/min", "optimal": [90, null], "standard": [60, null], "severity": "optimal", "notes": "" },
+        { "key": "creatinine", "value": null, "unit": "mg/dL", "optimal": [0.7, 1.0], "standard": [0.60, 1.20], "severity": "optimal", "notes": "" },
+        { "key": "uric_acid", "value": null, "unit": "mg/dL", "optimal": [null, 5.5], "standard": [3.50, 7.20], "severity": "optimal", "notes": "" },
+        { "key": "alt", "value": null, "unit": "U/L", "optimal": [null, 25], "standard": [null, 55], "severity": "optimal", "notes": "" },
+        { "key": "ast", "value": null, "unit": "U/L", "optimal": [null, 25], "standard": [null, 34], "severity": "optimal", "notes": "" },
+        { "key": "ggt", "value": null, "unit": "U/L", "optimal": [null, 25], "standard": [12, 64], "severity": "optimal", "notes": "" },
+        { "key": "alk_phos", "value": null, "unit": "U/L", "optimal": [40, 100], "standard": [40, 150], "severity": "optimal", "notes": "" },
+        { "key": "bilirubin_total", "value": null, "unit": "mg/dL", "optimal": [0.3, 1.2], "standard": [0.2, 1.2], "severity": "optimal", "notes": "" },
+        { "key": "albumin", "value": null, "unit": "g/dL", "optimal": [4.0, 5.0], "standard": [3.5, 5.2], "severity": "optimal", "notes": "" },
+
+        { "key": "vitamin_d", "value": null, "unit": "ng/mL", "optimal": [50, 70], "standard": [30, 100], "severity": "optimal", "notes": "" },
+        { "key": "vitamin_b12", "value": null, "unit": "pg/mL", "optimal": [500, null], "standard": [187, 883], "severity": "optimal", "notes": "" },
+        { "key": "ferritin", "value": null, "unit": "ng/mL", "optimal": [40, 100], "standard": [21.81, 274.66], "severity": "optimal", "notes": "" },
+        { "key": "transferrin_sat", "value": null, "unit": "%", "optimal": [20, 35], "standard": [12, 32], "severity": "optimal", "notes": "" },
+        { "key": "serum_iron", "value": null, "unit": "µg/dL", "optimal": [65, 130], "standard": [65, 175], "severity": "optimal", "notes": "" },
+        { "key": "calcium", "value": null, "unit": "mg/dL", "optimal": [9.0, 10.0], "standard": [8.40, 10.20], "severity": "optimal", "notes": "" },
+        { "key": "sodium", "value": null, "unit": "mEq/L", "optimal": [136, 145], "standard": [136, 145], "severity": "optimal", "notes": "" },
+        { "key": "potassium", "value": null, "unit": "mEq/L", "optimal": [3.5, 5.0], "standard": [3.50, 5.10], "severity": "optimal", "notes": "" }
+      ]
+    }
+  ]
+}
