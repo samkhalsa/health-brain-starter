@@ -263,7 +263,7 @@ At minimum, request a comprehensive panel covering:
 | **Nutrients** | Vitamin D (25-OH), B12, folate, ferritin, iron, transferrin saturation, magnesium |
 | **Blood count** | CBC with differential |
 
-**Where:** InsideTracker, Marek Health, Function Health, Quest/Labcorp, or your local lab. Budget: $200–800 depending on panel size.
+**Where:** InsideTracker, Marek Health, Function Health, Quest/Labcorp, or your local lab.
 
 ---
 
@@ -271,13 +271,13 @@ At minimum, request a comprehensive panel covering:
 
 These are the five numbers that matter most. Get a baseline on each, then retest every 3–6 months:
 
-| Metric | How to test | Cost |
-|--------|-------------|------|
-| **VO2 Max** | Cardiopulmonary exercise test at a sports-performance lab | $150–300 |
-| **Grip Strength** | Hand dynamometer (or dead hang time) | Free |
-| **Lean Muscle Mass** | DEXA scan | $75–200 |
-| **ApoB** | Bloodwork | Included in panel |
-| **HbA1c** | Bloodwork | Included in panel |
+| Metric | How to test |
+|--------|-------------|
+| **VO2 Max** | Cardiopulmonary exercise test at a sports-performance lab |
+| **Grip Strength** | Hand dynamometer (or dead hang time) |
+| **Lean Muscle Mass** | DEXA scan |
+| **ApoB** | Bloodwork |
+| **HbA1c** | Bloodwork |
 
 ---
 
@@ -304,20 +304,6 @@ The AI is good at:
 - Drafting training programs grounded in your injury history
 - Writing supplement protocols that map to specific bloodwork findings
 - Building API integrations (both the WHOOP and Withings clients here were written by AI in a single session)
-
----
-
-## Cost estimate (year 1)
-
-| Item | Cost | Frequency |
-|------|------|-----------|
-| WHOOP membership | $30/month | Monthly |
-| Bloodwork panel | $200–800 | Quarterly |
-| DEXA scan | $75–200 | Quarterly |
-| VO2 Max test | $150–300 | Quarterly |
-| Supplements | $50–100/month | Monthly |
-| Telegram bot hosting | Free (Vercel) | — |
-| **Total year 1** | **~$2,500–5,000** | |
 
 ---
 

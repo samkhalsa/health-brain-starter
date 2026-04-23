@@ -1,24 +1,24 @@
 # 12. TESTING SCHEDULE
 
-> What to test, how often, where, and what it costs. Populate this with your actual providers and renewal dates.
+> What to test, how often, and where. Populate this with your actual providers and renewal dates.
 
 ---
 
 ## Schedule at a Glance
 
-| Test | Frequency | Next due | Where | Cost |
-|------|-----------|----------|-------|------|
-| Comprehensive bloodwork | Every 3–4 months | `[date]` | `[lab]` | $200–800 |
-| DEXA scan | Every 3–6 months | `[date]` | `[imaging center]` | $75–200 |
-| VO2 Max test | Every 6–12 months | `[date]` | `[sports-performance lab]` | $150–300 |
-| Mobility reassessment (FMS) | Every 8 weeks | `[date]` | Self or `[PT]` | Free – $150 |
-| Longevity benchmarks (dead hang, grip, sit-rise) | Every 8 weeks | `[date]` | Self | Free |
-| Progress photos | Every 4 weeks | `[date]` | Self | Free |
-| Physio / strength-coach check-in | Monthly | `[date]` | `[provider]` | `[$]` |
-| Dental cleaning | Every 6 months | `[date]` | `[dentist]` | `[$]` |
-| Eye exam | Annually | `[date]` | `[optometrist]` | `[$]` |
-| Skin check (dermatologist) | Annually | `[date]` | `[derm]` | `[$]` |
-| Colonoscopy | As advised (45+) | `[date]` | `[gastro]` | `[$]` |
+| Test | Frequency | Next due | Where |
+|------|-----------|----------|-------|
+| Comprehensive bloodwork | Every 3–4 months | `[date]` | `[lab]` |
+| DEXA scan | Every 3–6 months | `[date]` | `[imaging center]` |
+| VO2 Max test | Every 6–12 months | `[date]` | `[sports-performance lab]` |
+| Mobility reassessment (FMS) | Every 8 weeks | `[date]` | Self or `[PT]` |
+| Longevity benchmarks (dead hang, grip, sit-rise) | Every 8 weeks | `[date]` | Self |
+| Progress photos | Every 4 weeks | `[date]` | Self |
+| Physio / strength-coach check-in | Monthly | `[date]` | `[provider]` |
+| Dental cleaning | Every 6 months | `[date]` | `[dentist]` |
+| Eye exam | Annually | `[date]` | `[optometrist]` |
+| Skin check (dermatologist) | Annually | `[date]` | `[derm]` |
+| Colonoscopy | As advised (45+) | `[date]` | `[gastro]` |
 
 ---
 
